@@ -25,9 +25,13 @@ function App() {
   }
   ]);
 
+  const reversetodo=()=>{
+    setTodos(prevTodos=>[...prevTodos].reverse());
+  };
+
   return (
     <div id="main">
-      <button>Reverse</button>
+      <button onClick={reversetodo}>Reverse</button>
       <table>
         <tbody>
         </tbody>
